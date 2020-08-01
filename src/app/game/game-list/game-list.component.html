@@ -1,13 +1,16 @@
-<div *ngFor="let game of games">
-<mat-card>
-<mat-card-header>
-{{game.title}}
-</mat-card-header>
-<mat-card-title>
-<img class="card-img-top" src="{{game.cover}}" alt="{{game.name}}">
-</mat-card-title>
-</mat-card>
-
+<div class="container">
+  <h3 class="text-center m-4">Cliquer pour selectionner un jeu</h3>
+  <div class="row d-flex justify-content-center mt-3">
+    <div *ngFor="let game of games">
+      <div class="card m-1" style="width: 15rem;" gameBorderCard>
+        <img src="{{game.cover}}" alt="{{game.name}}">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{game.name}}</h5>
+          <p class="card-text">Ajouté le : {{game.date | date: 'dd/MM/yyyy'}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!--
 <p>game-list works!</p>

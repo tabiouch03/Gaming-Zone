@@ -1,5 +1,5 @@
 mat-toolbar {
-  height: 100px;
+  height: 80px;
   margin-bottom: 20px;
 }
 
@@ -10,8 +10,9 @@ mat-toolbar {
 span {
   padding-right: 1rem;
   margin-right: 1rem;
+  font-size: 1rem;
 }
 
 .border-link {
-  border-right: 4px solid white;
+  border-right: 2px solid white;
 }

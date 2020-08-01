@@ -1,0 +1,26 @@
+<div *ngFor="let game of games">
+<mat-card>
+<mat-card-header>
+{{game.title}}
+</mat-card-header>
+<mat-card-title>
+<img class="card-img-top" src="{{game.cover}}" alt="{{game.name}}">
+</mat-card-title>
+</mat-card>
+
+</div>
+<!--
+<p>game-list works!</p>
+<div class="container">
+    <div *ngFor="let game of games">
+      <div class="card m-1" style="width: 18rem;">
+<img class="card-img-top" src="{{game.cover}}" alt="{{game.name}}">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{game.name}}</h5>
+          <span class="badge badge-danger mb-3">{{game.genre.genre}}</span>
+          <p class="card-text">Ajouté le : {{game.date | date: 'dd/MM/yyyy'}}</p>
+        </div>
+    </div>
+  </div>
+</div>
+ -->

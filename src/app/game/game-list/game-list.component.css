@@ -1,0 +1,18 @@
+img {
+  height: 10.5rem;
+  width: 25%;
+}
+
+h3 {
+  color: black;
+}
+
+mat-card {
+  height: 200px;
+  margin-top: 1rem;
+}
+
+mat-card-title {
+height: 50px;
+color: white;
+}

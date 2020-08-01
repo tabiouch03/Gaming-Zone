@@ -1,0 +1,17 @@
+mat-toolbar {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+span {
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+.border-link {
+  border-right: 4px solid white;
+}

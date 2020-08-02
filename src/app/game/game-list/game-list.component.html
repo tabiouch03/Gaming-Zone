@@ -1,11 +1,13 @@
 <div class="container">
-  <h3 class="text-center m-4">Cliquer pour selectionner un jeu</h3>
   <div class="row d-flex justify-content-center mt-3">
     <div *ngFor="let game of games">
       <div class="card m-1" style="width: 15rem;" gameBorderCard>
-        <img src="{{game.cover}}" alt="{{game.name}}">
+        <div class="card-header text-center">
+          {{game.title | uppercase}}
+        </div>
+        <img src="{{game.cover}}" alt="{{game.title}}">
         <div class="card-body text-center">
-          <h5 class="card-title">{{game.name}}</h5>
+                    <span class="badge badge-danger mb-3">{{game.genre.name}}</span>
           <p class="card-text">Ajouté le : {{game.date | date: 'dd/MM/yyyy'}}</p>
         </div>
       </div>

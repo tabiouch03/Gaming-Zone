@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { gameBorderCard } from "./directive/border-card.directive";
+import { gameBorderCard } from "./directive/game-border-card.directive";
+import { newsBorderCard } from "./directive/news-border-card.directive";
+
 
 import { AppComponent } from './app.component';
 import { GameComponent } from './game/game.component';
@@ -23,7 +25,8 @@ import { MaterialModule } from './material/material.module';
     NavbarComponent,
     GameListComponent,
     GameNewsComponent,
-    gameBorderCard
+    gameBorderCard,
+    newsBorderCard
   ],
   imports: [
     BrowserModule,

@@ -16,3 +16,7 @@ span {
 .border-link {
   border-right: 2px solid white;
 }
+
+.logo {
+  font-size: 2rem;
+}

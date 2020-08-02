@@ -15,7 +15,7 @@ export class gameBorderCard {
    }
 
    @HostListener('mouseenter') onMouseEnter() {
-     this.setBorder('#4a4342');
+     this.setBorder('#212121');
    }
 
    @HostListener('mouseleave') onMouseLeave() {
@@ -23,7 +23,7 @@ export class gameBorderCard {
   }
 
    private setBorder(color: string) {
-     let border = 'solid 4px ' + color;
+     let border = 'solid 2px ' + color;
      this.el.nativeElement.style.border = border;
    }
 

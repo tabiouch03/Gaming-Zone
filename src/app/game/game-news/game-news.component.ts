@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NewsService } from '../../services/new.service';
+import { News } from '../../model/news.model';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-game-news',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameNewsComponent implements OnInit {
 
-  constructor() { }
+  news = [];
+
+  constructor(
+    private newsService: NewsService,
+    private router: Router,
+    private route:ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.newsService.getNews().subscribe(news => {
+      this.news = news;
+    })
   }
 
 }

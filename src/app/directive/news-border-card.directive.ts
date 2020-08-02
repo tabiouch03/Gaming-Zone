@@ -1,9 +1,6 @@
 import { Directive, ElementRef, HostListener, Host } from '@angular/core';
 
 
-// Cette directive aura pour effet de changer la bordure d'une carte 
-// lors du passage de la souris.
-// Ajouter simplement gameBorderCard dans une balise HTML pour l'utiliser
 @Directive({ 
   selector: '[newsBorderCard]' 
 })

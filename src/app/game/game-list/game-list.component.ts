@@ -23,5 +23,11 @@ export class GameListComponent implements OnInit {
       
     });
   }
+
+  selectGame(game: Game): void {
+    console.log('Vous avez selectionné ' + game.title);
+    let link = ['games/' + game.id];
+    this.router.navigate(link);
+}
 }
 

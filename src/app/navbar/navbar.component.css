@@ -17,6 +17,11 @@ span {
   border-right: 2px solid white;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
+  color: aliceblue;
   font-size: 2rem;
 }

@@ -16,6 +16,7 @@ import { GameNewsComponent } from './game/game-news/game-news.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { GameCreateComponent } from './game-create/game-create.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MaterialModule } from './material/material.module';
     GameListComponent,
     GameNewsComponent,
     gameBorderCard,
-    newsBorderCard
+    newsBorderCard,
+    GameCreateComponent
   ],
   imports: [
     BrowserModule,

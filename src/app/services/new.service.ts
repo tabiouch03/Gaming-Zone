@@ -12,23 +12,23 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  // Get All Games
+  // Get All News
   getNews() {
     return this.http.get<News[]>(this.REST_API_SERVER);
   }
-  // Get Game By ID
+  // Get News By ID
   getGameById(id: string) {
     return this.http.get<News>(this.REST_API_SERVER_NEWS_DETAIL + id);
   }
-  // Create Game
+  // Create News
   createGame(data: News) {
     return this.http.post<News>(this.REST_API_SERVER, data)
   }
-  // Update Game
+  // Update News
   updateGame(data: News, id: string) {
     return this.http.put<News>(this.REST_API_SERVER_NEWS_DETAIL + id, data);
   }
-  // Delete Game
+  // Delete News
   deleteGame(id: string) {
     return this.http.delete<News>(this.REST_API_SERVER_NEWS_DETAIL + id);
   }

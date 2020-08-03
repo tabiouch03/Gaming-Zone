@@ -4,11 +4,11 @@ import { News } from '../../model/news.model';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-game-news',
-  templateUrl: './game-news.component.html',
-  styleUrls: ['./game-news.component.css']
+  selector: 'app-news-list',
+  templateUrl: './news-list.component.html',
+  styleUrls: ['./news-list.component.css']
 })
-export class GameNewsComponent implements OnInit {
+export class NewsListComponent implements OnInit {
 
   news = [];
 

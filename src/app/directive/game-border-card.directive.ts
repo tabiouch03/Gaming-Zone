@@ -1,17 +1,17 @@
 import { Directive, ElementRef, HostListener, Host } from '@angular/core';
 
 
-// Cette directive aura pour effet de changer la bordure d'une carte 
+// Cette directive aura pour effet de changer la bordure d'une carte
 // lors du passage de la souris.
 // Ajouter simplement gameBorderCard dans une balise HTML pour l'utiliser
-@Directive({ 
-  selector: '[gameBorderCard]' 
+@Directive({
+  selector: '[gameBorderCard]'
 })
 
 export class gameBorderCard {
   constructor(private el: ElementRef) {
     this.setBorder('#f5f5f5');
-    this.setHeight(20);
+    this.setHeight(25);
    }
 
    @HostListener('mouseenter') onMouseEnter() {

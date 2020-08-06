@@ -20,14 +20,15 @@ export class GameListComponent implements OnInit {
   ngOnInit(): void {
     this.gameService.getGames().subscribe(games => {
       this.games = games;
-      
     });
   }
+  
 
   selectGame(game: Game): void {
     console.log('Vous avez selectionné ' + game.title);
     let link = ['games/' + game.id];
     this.router.navigate(link);
 }
+
 }
 

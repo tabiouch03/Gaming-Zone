@@ -1,8 +1,26 @@
-img {
+.cover {
     height: 70vh;
     width: 100%;
 }
 
 .content {
     padding: 50px;
+}
+
+.test_img {
+    height: 22vh;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dot {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(143, 68, 68);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+p:empty {
+    display: none;
 }

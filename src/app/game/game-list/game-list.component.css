@@ -1,9 +1,17 @@
 img {
-    height: 150px;
+    height: 130px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
 
+p {
+    font-size: 12px;
+}
+
 h3 {
-  color: black;
+    color: black;
+}
+
+span {
+    margin-left: 10px;
 }

@@ -1,13 +1,68 @@
 <div class="container">
-  <div class="card m-1" style="width: 100%;">
-    <div class="card-header text-center">
-      {{currentGame.title | uppercase}}
+    <!-- Test Terminé -->
+    <div *ngIf="currentGame.available == true" class="card m-1" style="width: 100%;">
+        <div class="card-header text-center">
+            {{ currentGame.title | uppercase }}
+        </div>
+        <div class="card-body">
+            <img class="cover" src="{{ currentGame.cover }}" />
+        </div>
+        <div class="content card-header">
+            <h2 class="text-center">LE TEST</h2>
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <p>{{ currentGame?.description }}</p>
+                </div>
+                <div class="col-md-4 col-sm-8 ">
+                    <img class="test_img" *ngIf="currentGame.test_img" src="{{ currentGame.test_img }}" />
+                </div>
+            </div>
+            <div class="row mt-2 ">
+                <div class="col-md-4 col-sm-8 ">
+                    <img class="test_img" *ngIf="currentGame.test_img1" src="{{ currentGame.test_img1 }} " />
+                </div>
+                <div class="col-md-8 col-sm-12 ">
+                    <p>{{ currentGame.description1 }}</p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-8 col-sm-12 ">
+                    <p>{{ currentGame.description2 }}</p>
+                </div>
+                <div class="col-md-4 col-sm-8 ">
+                    <img class="test_img " *ngIf="currentGame.test_img2" src="{{ currentGame.test_img2 }} " />
+                </div>
+            </div>
+            <div class="row mt-2 ">
+                <div class="col-md-4 col-sm-8 ">
+                    <img class="test_img " *ngIf="currentGame.test_img3" src="{{ currentGame.test_img3 }} " />
+                </div>
+                <div class="col-md-8 col-sm-12 ">
+                    <p>{{ currentGame.description3 }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body text-center ">
+            <span class="dot p-2 text-white ">
+                <p class="pt-2">Note</p>
+                {{ currentGame.average }} / 20
+            </span>
+        </div>
+        <a href="/games " class="d-flex justify-content-center mb-2 mt-2 ">
+            <button class="btn btn-small bg-primary text-white ">Retour</button>
+        </a>
     </div>
-    <div class="card-body">
-    <img src="{{currentGame.cover}}"/>
+
+    <!-- Test Non Terminé -->
+    <div *ngIf="currentGame.available == false" class="card m-1" style="width: 100%;">
+        <div class="card-header text-center">
+            Prochainement ...
+        </div>
+        <div class="card-body text-center">
+            Le test du jeu n'a pas été réaliser.
+        </div>
+        <a href="/games " class="d-flex justify-content-center mb-2 mt-2 ">
+            <button class="btn btn-small bg-primary text-white ">Retour</button>
+        </a>
     </div>
-    <div class="content card-header">
-    <p>{{currentGame.resume}}</p>
-    </div>
-  </div>
 </div>

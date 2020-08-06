@@ -1,14 +1,14 @@
 import { Directive, ElementRef, HostListener, Host } from '@angular/core';
 
 
-@Directive({ 
-  selector: '[newsBorderCard]' 
+@Directive({
+  selector: '[newsBorderCard]'
 })
 
 export class newsBorderCard {
   constructor(private el: ElementRef) {
     this.setBorder('#f5f5f5');
-    this.setHeight(6);
+    this.setHeight(10);
    }
 
    @HostListener('mouseenter') onMouseEnter() {

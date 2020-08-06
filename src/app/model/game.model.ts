@@ -9,7 +9,7 @@ export class Game {
     public available: boolean,
     public trailer: string,
     public editor: string,
-    public genre: string
+    public genre: any
   ) {}
 }
 

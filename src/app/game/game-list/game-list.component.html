@@ -10,7 +10,10 @@
                     <p>{{ game.resume }}</p>
                 </div>
                 <div class="card-header text-center">
-                    <span *ngFor="let genre of game.genre" class="mt-2 {{ genre.name | genreColor }}">{{ genre.name }}</span>
+                   
+                    <span *ngFor="let genre of game.genre" class="mt-2 pt-1 {{ genre.name | genreColor }}">{{ genre.name }}</span>
+                    <br>
+                    <span *ngFor="let plateform of game.plateform" class="mt-2 pt-1 {{ plateform.console | plateformColor }}">{{ plateform.console }}</span>
                     <p class="card-text ">
                         Ajouté le : {{ game.date | date: "dd/MM/yyyy " }}
                     </p>

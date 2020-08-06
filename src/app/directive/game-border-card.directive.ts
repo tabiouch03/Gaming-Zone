@@ -11,7 +11,7 @@ import { Directive, ElementRef, HostListener, Host } from '@angular/core';
 export class gameBorderCard {
   constructor(private el: ElementRef) {
     this.setBorder('#f5f5f5');
-    this.setHeight(25);
+    this.setHeight(28);
    }
 
    @HostListener('mouseenter') onMouseEnter() {

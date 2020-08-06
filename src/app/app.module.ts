@@ -18,6 +18,7 @@ import { GameCreateComponent } from './game/game-create/game-create.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { GenreColorPipe } from './pipes/genre-color.pipe';
+import { PlateformColorPipe } from './pipes/plateform-color.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { GenreColorPipe } from './pipes/genre-color.pipe';
     gameBorderCard,
     newsBorderCard,
     GameCreateComponent,
-    GenreColorPipe
+    GenreColorPipe,
+    PlateformColorPipe
   ],
   imports: [
     BrowserModule,

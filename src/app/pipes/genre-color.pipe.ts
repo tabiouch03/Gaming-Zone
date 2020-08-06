@@ -13,13 +13,19 @@ export class GenreColorPipe implements PipeTransform {
     // On defini le switch pour tout les cas de genre possible
     switch (genre) {
       case 'RPG':
-        color = 'badge-primary';
+        color = 'badge-dark';
         break;
       case 'SPORT':
         color = 'badge-danger';
         break;
       case 'MMO':
         color = 'badge-secondary';
+        break;
+      case 'AVENTURE':
+        color = 'badge-warning';
+        break;
+      case 'PLATES-FORMES':
+        color = 'badge-danger';
         break;
     }
     // Exemple pour le cas RPG ce qui sera return sera une string que l'on pourra

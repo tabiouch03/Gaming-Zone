@@ -2,27 +2,46 @@
   <div class="submit-form">
     <div *ngIf="!isSubmit">
       <div class="form-group">
-        <label for="name">Nom</label>
-        <input type="text" class="form-control" id="name" required name="name" [(ngModel)]="game.title">
+        <label for="title">Titre du jeu</label>
+        <input type="text" class="form-control" id="title" required name="title" [(ngModel)]="game.title">
       </div>
       <div class="form-group">
         <label for="genre">Genre</label>
         <input type="text" class="form-control" id="genre" required name="genre" [(ngModel)]=game.genre>
       </div>
       <div class="form-group">
+        <label for="resume">Resumer</label>
+        <input type="text" class="form-control" id="resume" required name="resume" [(ngModel)]="game.resume">
+      </div>
+      <div class="form-group">
+        <label for="trailer">Trailer</label>
+        <input type="text" class="form-control" id="trailer" required name="trailer" [(ngModel)]="game.trailer">
+      </div>
+      <div class="form-group">
+        <label for="average">Note</label>
+        <input type="number" class="form-control" id="average" required name="average" [(ngModel)]="game.average">
+      </div>
+      <div class="form-group">
         <label for="cover">Couverture</label>
         <input type="text" class="form-control" id="cover" required name="cover" [(ngModel)]="game.cover">
       </div>
       <div class="form-group">
+        <label for="available">Disponible</label>
+        <input type="checkbox" class="form-control" id="available" required name="available" [(ngModel)]="game.available">
+      </div>
+      <div class="form-group">
         <label for="resume">Description</label>
-        <textarea type="text" class="form-control" id="resume" required name="resume" [(ngModel)]="game.resume"></textarea>
+        <textarea type="text" class="form-control" id="resume" required name="resume"
+          [(ngModel)]="game.resume"></textarea>
       </div>
       <button (click)="saveGame()" class="btn btn-success">Rajouter</button>
     </div>
 
     <div *ngIf="isSubmit">
-      <h4>Le jeu a été rajouter.</h4>
-      <button class="btn btn-sucess" (click)="newGame()">Rajouter un jeu</button>
+      <div class="container text-center">
+        <h4>Le jeu a été rajouter.</h4>
+        <button class="btn btn-sucess" (click)="newGame()">Rajouter un jeu</button>
+      </div>
     </div>
 
   </div>

@@ -15,7 +15,7 @@ export class NewsListComponent implements OnInit {
   constructor(
     private newsService: NewsService,
     private router: Router,
-    private route:ActivatedRoute
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
@@ -23,5 +23,4 @@ export class NewsListComponent implements OnInit {
       this.news = news;
     })
   }
-
 }

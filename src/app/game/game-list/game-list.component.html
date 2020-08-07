@@ -11,7 +11,7 @@
                 </div>
                 <div class="card-header text-center">
                    
-                    <span *ngFor="let genre of game.genre" class="mt-2 pt-1 {{ genre.name | genreColor }}">{{ genre.name }}</span>
+                    <span id="genre" *ngFor="let genre of game.genre" class="mt-2 pt-1 {{ genre.name | genreColor }}">{{ genre.name }}</span>
                     <br>
                     <span *ngFor="let plateform of game.plateform" class="mt-2 pt-1 {{ plateform.console | plateformColor }}">{{ plateform.console }}</span>
                     <p class="card-text ">

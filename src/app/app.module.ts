@@ -32,7 +32,7 @@ import { PlateformColorPipe } from './pipes/plateform-color.pipe';
     newsBorderCard,
     GameCreateComponent,
     GenreColorPipe,
-    PlateformColorPipe
+    PlateformColorPipe,
   ],
   imports: [
     BrowserModule,

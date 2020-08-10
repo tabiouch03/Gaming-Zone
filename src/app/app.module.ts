@@ -21,6 +21,7 @@ import { GenreColorPipe } from './pipes/genre-color.pipe';
 import { PlateformColorPipe } from './pipes/plateform-color.pipe';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './services/auth.service';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { AuthService } from './services/auth.service';
     GenreColorPipe,
     PlateformColorPipe,
     LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

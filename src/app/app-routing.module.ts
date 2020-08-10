@@ -5,11 +5,12 @@ import { GameDetailComponent } from './game/game-detail/game-detail.component';
 import { GameCreateComponent } from './game/game-create/game-create.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'games', pathMatch: 'full' },
-  { path: 'add', component: GameCreateComponent },
+  { path: 'add', component: GameCreateComponent, canActivate: [AuthGuard] },
   { path: 'games', component: GameComponent },
   { path: 'games/:id', component: GameDetailComponent },
   { path: 'login', component: LoginComponent},

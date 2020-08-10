@@ -11,11 +11,15 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   registerUser(user) {
-    return this.http.post(this._registerUrl, user)
+    return this.http.post<any>(this._registerUrl, user)
   }
 
   loginUser(user) {
     console.log(user);
     return this.http.post<any>(this._loginUrl, user)
+  }
+
+  logged() {
+    return !!localStorage.getItem('token')
   }
 }

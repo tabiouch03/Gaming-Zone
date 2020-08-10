@@ -2,8 +2,6 @@
   <div class="row">
     <div class="col-md-6 mx-auto">
       <span class="anchor" id="formLogin"></span>
-
-      <!-- form card login -->
       <div class="card rounded-0">
         <div class="card-header">
           <h3 class="mb-0">S'enregistrer</h3>
@@ -12,25 +10,23 @@
           <form class="form">
             <div class="form-group">
               <label for="uname1">Nom d'utilisateur</label>
-              <input type="text" [(ngModel)]="registerUserData.username" name="username" class="form-control rounded-0" required>
+              <input type="text" [(ngModel)]="registerUserData.username" name="username" class="form-control rounded-0"
+                required>
             </div>
             <div class="form-group">
               <label>Mot de passe</label>
-              <input type="password1" [(ngModel)]="registerUserData.password1" name="password1" class="form-control rounded-0"  required>
+              <input type="password1" [(ngModel)]="registerUserData.password1" name="password1"
+                class="form-control rounded-0" required>
             </div>
             <div class="form-group">
               <label>Confirmation du mot de passe</label>
-              <input type="password2" [(ngModel)]="registerUserData.password2" name="password2" class="form-control rounded-0"  required>
+              <input type="password2" [(ngModel)]="registerUserData.password2" name="password2"
+                class="form-control rounded-0" required>
             </div>
             <button type="button" (click)="registerUser()" class="btn btn-primary float-right">Register</button>
           </form>
         </div>
-        <!--/card-block-->
       </div>
-      <!-- /form card login -->
-
     </div>
-
-
   </div>
 </div>

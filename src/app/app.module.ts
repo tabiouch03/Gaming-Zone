@@ -19,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { GenreColorPipe } from './pipes/genre-color.pipe';
 import { PlateformColorPipe } from './pipes/plateform-color.pipe';
+import { LoginComponent } from './login/login.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { PlateformColorPipe } from './pipes/plateform-color.pipe';
     GameCreateComponent,
     GenreColorPipe,
     PlateformColorPipe,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,11 @@ import { PlateformColorPipe } from './pipes/plateform-color.pipe';
     BrowserAnimationsModule,
     MaterialModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: AuthService
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

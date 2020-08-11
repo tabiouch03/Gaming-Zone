@@ -2,8 +2,9 @@
   <a href="/games"><div class="logo">GAMING ZONE</div></a>
   <div>
   <span class="border-link">Live Zone</span>
-  <a  href="/register"><span class="border-link">S'enregister</span></a>
-  <a  href="/login"><span>Se connecter</span></a>
-  <a  href="/add"><span>Administration</span></a>
+  <a *ngIf="!authService.logged()" href="/register"><span class="border-link">S'enregister</span></a>
+  <a *ngIf="!authService.logged()" href="/login"><span>Se connecter</span></a>
+  <a *ngIf="authService.logged()" href="/add"><span class="border-link">Administration</span></a>
+  <a *ngIf="authService.logged()" (click)="authService.logoutUser()"><span>Deconnexion</span></a>
   </div>
 </mat-toolbar>
